@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "SMD Quiz 4 OTP",
+    "slug": "i233076-smd-quiz4-otp",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "orientation": "portrait",
+    "scheme": "i233076otp",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.i233076.smdquiz4otp",
+      "googleServicesFile": "./google-services.json"
+    },
+    "plugins": [
+      "expo-dev-client",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ]
+  }
+}
