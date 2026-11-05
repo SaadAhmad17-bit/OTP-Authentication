@@ -52,25 +52,6 @@ npx expo start --dev-client
 
 Enter the exact test phone number you configured, including `+` and the country code. Tap **Request verification code**, then enter the six-digit code saved beside that number in Firebase Console. Firebase does not send an SMS for a test number.
 
-## Screenshots and screen recording
-
-1. Install the development build on an Android phone. Use the configured Firebase test number and code for the no-charge demonstration.
-2. Start Android's screen recorder before opening the app. Show the student header, test-number entry, tapping **Request verification code**, entering the configured code, and **Verification complete**. Use screenshots for the phone-entry, code-entry, and success screens if your submission needs separate images. Firebase test numbers do not receive SMS, so this records the OTP flow but not an incoming SMS notification.
-3. If your instructor requires an actual SMS inbox/notification in the recording, you will need to switch to a real phone number; that sends a billable SMS and requires billing to be enabled.
-4. Keep personal phone numbers and SMS codes out of any public repository or public video. Stop the recording and save the original video file for submission.
-
-## GitHub submission
-
-Create an empty GitHub repository, then from this folder run:
-
-```powershell
-git add .
-git commit -m "Build Firebase phone OTP verification app"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-git push -u origin main
-```
-
 Replace the remote URL with your repository's URL. Include `google-services.json` if you want the repository to build immediately; Firebase client configuration is not a private service-account credential. Never add a service-account key or other private credential. If you choose not to publish the Firebase config, share it separately with your instructor and explain where it should be placed.
 
 ## References
